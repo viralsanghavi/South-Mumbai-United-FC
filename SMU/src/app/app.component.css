@@ -1,0 +1,451 @@
+@font-face { font-family: webly; src: url(../assets/font/webly.ttf)}
+section {  min-height: 100vh; ;height: auto; position: relative; font-family: webly, 'Segoe UI', helvetica, sans-serif; line-height: 1.3; }
+a { text-decoration: none; color: black; }
+.wrapper { overflow: hidden;
+}
+
+/* Navbar */
+#navbar{
+  height: 75px;
+}
+/* -- Home Section ---------------------------------- */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  90% { left: -300%; }
+  100% { left: -400%; }
+  }
+  
+  div#slider {
+    overflow: hidden;
+    width: 100%;
+    min-height: 70%;
+    object-fit: contain;
+    margin: 5px;
+  }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+    
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+  
+
+#home {
+  /* background: url(../assets/img/); */
+  /* background: url(../assets/img/smuflag.jpeg); */
+  background-size: cover;
+  /* background-image: url(../assets/img/Smu.jpeg) ; */
+  overflow: hidden; 
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Video Background */
+/* #video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: auto;
+}
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.5);
+} */
+
+
+*{
+  font-family: lilita;
+}
+/* Main Title */
+@font-face { font-family: alex-brush; src: url(../assets/font/alex-brush.ttf)}
+.main-title {
+  position: absolute;
+  top: 30%;
+  color: black;
+  font-family: lilita;
+  font-size: 1rem;
+}
+
+/* Social Icons */
+.social-icons {
+  position: absolute;
+  top: 53%;
+  margin-left: 5px;
+}
+.social-icons fa-icon {
+  font-size: 3rem;
+  color: black;
+  padding: 7.5px 15px;
+  cursor: pointer;
+}
+.social-icons fa-icon:hover {
+  color: #202020;
+  background-color: white;
+}
+
+/* -- About Section --------------------------------- */
+.background {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  background-color: white;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.18' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+  /* background-image: linear-gradient( white,#bdc3c7 , #2c3e50); */
+
+}
+.card {
+  position: relative;
+  top: 8vh;
+  height: auto;
+  width: 30vw;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-img {
+  height: 35vh;
+  width: 35vh;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 2px 5px 10px 4px rgba(0,0,0,.25);
+  
+}
+
+.card-body {
+  padding: 0 1.2rem;
+}
+.card-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem; 
+  width: 100%; 
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+.card-text {
+  font-size: 3rem;
+  margin-top: 0;
+  text-align: justify;
+}
+.card-button {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(233, 235, 156);
+  padding: .5rem;
+  margin-top: 3vh;
+  border-radius: 5px; 
+  box-shadow: 0 0.3rem rgba(0,0,0,.65);
+}
+.card-button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(0,0,0,.65);
+}
+/* SLideshow */
+#slide-divider{
+  display: flex;
+}
+
+/* -- Projects Section ------------------------------ */
+#projects {
+   background-color: white;
+   /* background-image: linear-gradient( #bdc3c7, #2c3e50, #5b86e5); */
+  }
+.projects {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10%;
+  padding: 5px;
+
+}
+.projects-title {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+.project-group-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-group-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.project-img img {
+  height: 425px;
+  width: 425px;
+  padding: 0.1cm;
+  transition: all 0.3s ease-in-out;
+  max-width:100%;
+  max-height:100%;
+
+  /* object-fit: contain; */
+}
+.project-img img:hover {
+  transform: scale(0.97);
+  transition: all 0.3s ease-in-out;
+}
+.project-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32);
+  margin: 12px;
+  text-align: center;
+}
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.project-title a:hover {
+  color: rgb(201,22,22);
+  transition: all 0.2s ease-in-out;
+}
+.github-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1vh;
+}
+.github-link a:hover {
+  color: rgb(201,22,22);
+  transition: all 0.3s ease-in-out;
+}
+
+/* -- Contact Section ------------------------------- */
+#contact { 
+  background-color: white;
+  /* background-image: linear-gradient( #5b86e5,white); */
+  /* Background Image */
+  /* background: url(../assets/img/mountain-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  display: flex;
+  justify-content: center;
+}
+.contact-mail {
+  position: absolute;
+  color: white;
+  height: 100px;
+  font-family: alex-brush, helvetica, sans-serif;
+  font-size: 6rem;
+  margin-top: 10vh;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+}
+.contact-mail:hover {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+}
+#video-background-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.red {
+  color: rgb(201,22,22);
+}
+.business-card {
+  height: 100vh;
+  width: auto; 
+}
+
+/* -- Footer Section -------------------------------- */
+#footer {
+  background-color: white;
+  min-height: unset;
+  height: 150px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons fa-icon {
+  color: #202020;
+  font-size: 2rem;
+  margin-left: 1vw;
+}
+.footer-icons fa-icon:hover {
+  color: rgb(201,22,22);
+}
+.footer-text {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* -------------------- Media Queries ----------------------- */
+
+/* Monitor - No Bookmarks Bar */
+@media screen and (min-width: 1800px) and (min-height: 938px) {
+}
+
+/* Monitor - Fullscreen */
+@media screen and (min-width: 1800px) and (min-height: 1000px) {
+  .wrapper { overflow-x: hidden; }
+  .card { padding: 5rem 1.5rem; }
+  #footer { height: 180px; }
+}
+
+/* Laptop - Bookmarks Bar */
+@media screen and (max-width: 1800px) {
+  .main-title { top: 25%; }
+  .card { top: 0; }
+  .card-text { font-size: 1.2rem; }
+  .project-img img { height: 375px; width: 375px; }
+}
+
+/* Laptop - No Bookmarks Bar */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 760px) {
+}
+
+/* Laptop - Fullscreen */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {
+  .wrapper { overflow-x: hidden; }
+  .card { top: 4vh; }
+}
+
+/* Laptop - 1366 x 768 - Bookmarks Bar */
+@media screen and (width: 1366px) {
+  .card-text { font-size: 1rem; }
+  .main-title { font-size: 5rem; }
+  .card { width: 60vw; }
+  .project-img img { height: 300px; width: 300px; }
+  .contact-mail { font-size: 4rem; }
+}
+
+/* Laptop - 1366 x 768 - No Bookmarks Bar */
+@media screen and (width: 1366px) and (min-height: 720px) {
+}
+
+/* Laptop - 1366 x 768 - Fullscreen */
+@media screen and (width: 1366px) and (min-height: 759px) {
+  .wrapper { overflow-x: hidden; }
+}
+
+/* 1080P Monitor (150%) */
+@media screen and (max-width: 1300px) {
+  .main-title { font-size: 5rem; }
+  .card { width: 50vw; }
+  .project-img img { height: 330px; width: 330px; }
+  .contact-mail { font-size: 4rem; }
+}
+
+/* iPad - Horizontal */
+@media screen and (min-width: 900px) and (max-width: 1025px) {
+  video { object-fit: cover; }
+  #video-background { height: 100vh; width: 100vw; }
+  .social-icons { top: 52%; }
+  .card { width: 70vw; top: 5vh; }
+  .project-img img { height: 270px; width: 270px; }
+  #video-background-2 { height: 100vh; width: 100vw; }
+  .footer-icons fa-icon { margin-left: 15px; }
+}
+
+/* iPad */
+@media screen and (max-width: 769px) {
+  video { object-fit: cover; }
+  #video-background { height: 100vh; width: 100vw; }
+  .social-icons { top: 47%; }
+  .card { width: 70vw; top: 9vh; }
+  .projects { margin: 0 2%; position: relative; top: 8vh; }
+  .project-img img { height: 245px; width: 245px; }
+  #video-background-2 { height: 100vh; width: 100vw; }
+  .footer-icons fa-icon { margin-left: 15px; }
+}
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  video { object-fit: cover; }
+  #video-background { height: 100vh; width: 100vw; }
+  #video-background-2 { height: 100vh; width: 100vw; }
+  .main-title { font-size: 2rem; top: 30%; }
+  .social-icons { top: 45%; }
+  .social-icons fa-icon { font-size: 2rem; }
+  .card { width: 100vw; background-color: rgba(255,255,255,.7); top: 2vh; }
+  .card-text { font-size: 1rem; }
+  .projects-title { font-size: 2rem; padding-top: 0; }
+  .contact-mail { font-size: 3rem; }
+  .footer-icons fa-icon { margin-left: 20px; }
+}
+
+/* Large Smartphone (Horizontal) */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .main-title { top: 15%; }
+  .card { width: 80%; top: 0; }
+  .card-text { font-size: 1rem; }
+  .about-img { height: 50vh; width: 50vw; }
+  .projects { margin: 0 2%; }
+  .project-img img { height: 245px; width: 245px; }
+  .footer-icons fa-icon { margin-left: 20px; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 724px) and (max-height: 376px) {
+  .project-title { font-size: 1.2rem; }
+  .github-link { font-size: 1rem; }
+}
+
+/* iPhone X */
+@media screen and (max-width: 376px) {
+  .projects-title { font-size: 1.8rem; }
+}
+
+/* iPhone 6/7/8 */
+@media screen and (max-width: 376px) and (max-height: 668px) {
+}
+
+/* iPhone 6/7/8 - Horizontal */
+@media screen and (max-width: 668px) and (max-height: 376px) {
+  .card-title { font-size: 2rem; }
+  .project-img img { height: 210px; width: 210px; }
+}
+.goto{
+  
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    max-width: 5%;
+    vertical-align: middle;
+
+}

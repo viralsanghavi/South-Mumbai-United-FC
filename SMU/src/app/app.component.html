@@ -1,0 +1,210 @@
+<div class="wrapper">
+
+  <router-outlet></router-outlet>
+  <div id="navbar">
+    <app-nav-menu></app-nav-menu>
+
+  </div>
+  <!-- Home Section ---------------------------------->
+  <section id="home">
+    
+    <!-- Video Background -->
+
+    <!-- <video loop muted autoplay id="video-background">
+      <source src="https://www.instagram.com/p/B1-YF0_lrna/?utm_source=ig_web_options_share_sheet">
+    </video> -->
+    <div class="video-overlay"></div>
+
+    <!-- Main Title -->
+    <h1 class="main-title">South Mumbai United </h1>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SouthMumbaiUnitedFc/" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','facebook']" title="Facebook"></fa-icon>
+      </a>
+      <a href="https://www.instagram.com/southmumbaiunited/" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','instagram']" title="Instagram"></fa-icon>
+      </a>
+      <a href="https://twitter.com/fc_smu" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','twitter']" title="Twitter"></fa-icon>
+      </a>
+      <a href="https://www.youtube.com/channel/UCwDxrXhDmDHehSDbo76RWCg" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','youtube']" title="Youtube"></fa-icon>
+      </a>
+
+    </div>
+  </section>
+  <!-- Gallery -->
+
+  <section id="gallery">
+    
+    <div id="slide-divider">
+      <div id="slider" >
+        <div id="mens">
+          <figure style="height: 500px; object-fit: contain;">
+            <img src="../assets/img/Homebg.jpg" alt height="500px">
+            <img src="../assets/img/goto.png" alt height="500px">
+            <img src="../assets/img/Rajaram.png" alt height="500px">
+            <img src="../assets/img/Viral.jpeg" alt height="500px">
+            <img src="../assets/img/smuflag.jpeg" alt height="500px">
+          </figure>
+        </div>
+      </div>
+      <div id="slider" style="display: flex;">
+        <div id="womens">
+          <figure style="height: 500px; object-fit: contain;">
+            <img src="../assets/img/Homebg.jpg" alt height="500px">
+            <img src="../assets/img/goto.png" alt height="500px">
+            <img src="../assets/img/Rajaram.png" alt height="500px">
+            <img src="../assets/img/Viral.jpeg" alt height="500px">
+            <img src="../assets/img/smuflag.jpeg" alt height="500px">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section --------------------------------->
+  <div class="background">
+    <section id="about">
+      <div class="card">
+        <img src="../assets/img/Smu.jpeg" alt="Picture of Me" class="about-img">
+        <div class="card-body">
+          <h1 class="card-title">Club South Mumbai United</h1>
+          <p class="card-text">Eastablished in 2008, South Mumbai United was started with an intention to increase the
+            number of people playing this beautiful game.<br>Restarted in 2019, This team aims to make SMU stronger and
+            our aim is to constantly ensure quality standards to help players develop holistically. <br>Our Club is
+            registered with Mumbai District Fotball Association and is praticipating in all major tournaments of the
+            State including State Women's League</p>
+          <a routerLink="/resume" routerLinkActive="active" (click)="scrollToTop()">
+            <div class="card-button">Know More About Us</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Personal Section ------------------------------>
+  <section id="projects">
+    <div class="projects">
+      <h1 class="projects-title">SMU FAMILY</h1>
+      <div class="project-group-1">
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/director.jpg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Nitesh Singh</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">Director</a></h6>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/Coach-Raunnak.jpg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Raunak Desai</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">Head Coach</a></h6>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/smuflag.jpeg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Ashish Pandey</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">Head Coach</a></h6>
+          </div>
+        </article>
+      </div>
+      <div class="project-group-2">
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/Punjabi.jpg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Assistant Coach</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">Drishti Punjabi</a></h6>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/new_shreya.jpeg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Assistant Coach</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">Shreya Bhat</a></h6>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/Coach-Elvis.jpg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Assistant Coach</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">Elvis Ferrao</a></h6>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/Coach-Jay.jpg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Assistant Coach</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">
+                Jay Koradia</a></h6>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="project-img">
+            <a href="#"><img src="../assets/img/Viral.jpeg" alt="Project"></a>
+          </div>
+          <div class="project-caption">
+            <h4 class="project-title"><a href="#">Assistant Coach</a></h4>
+            <h6 class="github-link"><a href="#" title="View Github Repository">Viral Sanghavi</a></h6>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section ------------------------------->
+  <div class="background">
+    <section id="contact">
+
+      <!-- Mail to Link -->
+      <!-- <a href="mailto:your@email.address" class="contact-mail" target="_blank" rel="noopener">
+        contact<span class="red">@</span>your.email
+      </a> -->
+
+      <!-- Video Background -->
+      <!-- <video loop muted autoplay id="video-background-2">
+        <source src="../assets/img/video-game-background.mp4" type="video/mp4">
+      </video> -->
+
+      <!-- Business Card Mockup -->
+      <a href="mailto:smufc@gmail.com" target="_blank" rel="noopener" title="Click to Send Email">
+        <img src="../assets/img/business-card-mockup.png" alt="Business Cards" class="business-card">
+      </a>
+
+    </section>
+  </div>
+  <!-- Footer Section -------------------------------->
+  <section id="footer">
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/SouthMumbaiUnitedFc/" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','facebook']" title="Facebook"></fa-icon>
+      </a>
+      <a href="https://www.instagram.com/southmumbaiunited/" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','instagram']" title="Instagram"></fa-icon>
+      </a>
+      <a href="https://twitter.com/fc_smu" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','twitter']" title="Twitter"></fa-icon>
+      </a>
+      <a href="https://www.youtube.com/channel/UCwDxrXhDmDHehSDbo76RWCg" target="_blank" rel="noopener">
+        <fa-icon [icon]="['fab','youtube']" title="Youtube"></fa-icon>
+      </a>
+      <p class="footer-text">SMU-FC 2008</p>
+    </div>
+  </section>
+  <button *ngIf="isShow" (click)="gotoTop()" class="goto"> <img src="../assets/img/goto.png" alt="Go To top"></button>
+</div>
