@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper"  ng-class="{min:boolChangeClass}">
 
   <router-outlet></router-outlet>
   <div id="navbar">
@@ -119,7 +119,7 @@
       <div class="project-group-2">
         <article class="project-item">
           <div class="project-img">
-            <a href="#"><img src="../assets/img/Punjabi.jpg" alt="Project"></a>
+            <a href="#"><img src="../assets/img/drishti.jpg" alt="Project"></a>
           </div>
           <div class="project-caption">
             <h4 class="project-title"><a href="#">Assistant Coach</a></h4>
@@ -128,7 +128,7 @@
         </article>
         <article class="project-item">
           <div class="project-img">
-            <a href="#"><img src="../assets/img/new_shreya.jpeg" alt="Project"></a>
+            <a href="#"><img src="../assets/img/shreya.jpg" alt="Project"></a>
           </div>
           <div class="project-caption">
             <h4 class="project-title"><a href="#">Assistant Coach</a></h4>
@@ -206,5 +206,5 @@
       <p class="footer-text">SMU-FC 2008</p>
     </div>
   </section>
-  <button *ngIf="isShow" (click)="gotoTop()" class="goto"> <img src="../assets/img/goto.png" alt="Go To top"></button>
+  <button *ngIf="isShow" (click)="gotoTop()" class="goto"><mdb-icon fas icon="angle-up"></mdb-icon> <img src="../assets/img/goto.png" alt="Go To top"></button>
 </div>
