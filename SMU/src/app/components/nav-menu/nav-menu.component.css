@@ -40,9 +40,16 @@ nav{
 .navbar-inverse
 {
 	height: 55px;
-    background: rgba(0, 0, 0, 0.5);
+    background: black;
 }
-.navbar-inverse .logo_container > div
+.hidden{
+    color: white;
+    font-size: 1.2rem;
+}
+.visible{
+    display:none;
+}
+.navbar-inverse .logo_container > div 
 {
     visibility: hidden;
 }
