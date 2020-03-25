@@ -1,5 +1,5 @@
 @font-face { font-family: webly; src: url(../assets/font/webly.ttf)}
-section {  min-height: 100vh; ;height: auto; position: relative; font-family: webly, 'Segoe UI', helvetica, sans-serif; line-height: 1.3; }
+section {  min-height: 100vh; ;height: auto; position: relative; font-family: webly, 'Segoe UI', helvetica, sans-serif; line-height: 1.3;}
 a { text-decoration: none; color: black; }
 .wrapper { overflow: hidden;
 }
@@ -13,43 +13,10 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; }
-  45% { left: -100%; }
-  50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  90% { left: -300%; }
-  100% { left: -400%; }
-  }
-  
-  div#slider {
-    overflow: hidden;
-    width: 100%;
-    min-height: 70%;
-    object-fit: contain;
-    margin: 5px;
-  }
-    div#slider figure img { width: 20%; float: left; }
-    div#slider figure { 
-    
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 30s slidy infinite; 
-  }
-  
 
 #home {
-  /* background: url(../assets/img/); */
-  /* background: url(../assets/img/smuflag.jpeg); */
+ background: url(../assets/img/person-in-blue-soccer-jersey-standing-in-front-of-ball-1198173.jpg);
   background-size: cover;
-  /* background-image: url(../assets/img/Smu.jpeg) ; */
   overflow: hidden; 
   height: 100%;
   background-size: cover;
@@ -58,28 +25,6 @@ img {
   justify-content: center;
 }
 
-/* Video Background */
-/* #video-background {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: auto;
-}
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.video-overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,.5);
-} */
 
 
 *{
@@ -111,7 +56,13 @@ video {
   color: #202020;
   background-color: white;
 }
+.picsum-img-wrapper{
+  height: 450px;
+  width: 500px;
+}
+/* Gallery */
 
+  
 /* -- About Section --------------------------------- */
 .background {
   position: relative;

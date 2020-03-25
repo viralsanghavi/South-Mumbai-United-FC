@@ -15,7 +15,7 @@ export class NavMenuComponent implements OnInit {
 
   onWindowScroll(e) {
       let element = document.querySelector('.navbar');
-      if (window.pageYOffset > element.clientHeight) {
+      if (window.pageYOffset > 74) {
         element.classList.add('navbar-inverse');
         element.classList.replace('visible','hidden');
       } else{
